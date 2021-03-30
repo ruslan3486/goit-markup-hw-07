@@ -1,0 +1,38 @@
+.photo-ikon {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photo-link-ikon {
+
+    fill: var(--fill-icon);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: background-color var(--transition-duration) var(--timing-function),
+        fill var(--transition-duration) var(--timing-function);
+}
+
+.photo-link-ikon:hover,
+.photo-link-ikon:focus {
+    background-color: var(--accent-color);
+
+}
+
+.photo-link-ikon:hover,
+.photo-link-ikon:focus {
+    fill: var(--color-text-white);
+}
+
+.photo-title-ikon {
+
+    height: 20px;
+    width: 20px;
+}

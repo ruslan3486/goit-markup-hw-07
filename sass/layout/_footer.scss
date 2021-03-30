@@ -1,0 +1,186 @@
+.contacts-name {
+
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--color-efective);
+}
+
+
+.web-logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--color-text-white);
+}
+
+.web-logo-footer {
+    display: inline-block;
+    margin-bottom: 30px;
+
+}
+
+.contact-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.contact-list-item {
+    display: block;
+}
+
+.link-name {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-list-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-duration) var(--timing-function);
+}
+
+
+.contact-list-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+
+.contact-list-link:hover,
+.contact-list-link:focus {
+    color: var(--accent-color);
+}
+
+
+
+/* Иконки в подвале */
+.container-footer {
+    display: flex;
+    align-items: baseline;
+
+
+}
+
+.container-widht {
+    display: block;
+    margin-left: 70px;
+}
+
+.about-title-icon {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.about-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-icon-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.about-icon-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-duration) var(--timing-function);
+}
+
+/*Ховер и фокус для иконок в подвале страницы*/
+
+.about-icon-footer:hover,
+.about-icon-footer:focus {
+    background-color: var(--accent-color);
+}
+
+.about-icon-footer:hover .about-icon-footer:focus,
+.about-icon-link:hover,
+.about-icon-link:focus {
+
+    fill: var(--color-text-white);
+}
+
+.about-icon-link {
+    fill: var(--color-text-white);
+    width: 20px;
+    height: 20px;
+    transition: fill var(--transition-duration) var(--timing-function);
+}
+
+.form-link {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--color-text-white);
+}
+
+.subscribing-form {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    justify-content: center;
+    color: var(--color-text-white);
+
+    width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+}
+
+.form-link-container {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.input-form-mail {
+    padding-left: 16px;
+    color: var(--color-text-white);
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+
+
+.form-mail-imege {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}

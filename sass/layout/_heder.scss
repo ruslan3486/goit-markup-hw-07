@@ -1,0 +1,155 @@
+.header {
+
+    margin: 0 auto;
+    border: 1px solid #ececec;}
+
+    
+
+
+.header .container {
+    display: flex;
+    align-items: center;
+
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.web-navigation {
+    animation-duration: 1000ms;
+    animation-iteration-count: 2;
+
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.Web-color {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navigation-item:not(:last-child) {
+    margin-right: 50px;
+
+}
+
+
+
+/*Подсвечивание страницы*/
+.navigation-list .navigation-link.navigation-link-nav {
+    color: var(--accent-color);
+}
+
+.navigation-link-nav {
+    position: relative;
+}
+
+.navigation-link {
+    position: relative;
+}
+
+.navigation-link-nav::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+
+.navigation-link {
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primaru-text-color);
+    transition: color var(--transition-duration) var(--timing-function);
+
+}
+
+
+.navigation-link:hover,
+.navigation-link:focus {
+    color: var(--accent-color);
+}
+
+.tel-link:not(:last-child) {
+    margin-right: 50px;
+}
+.contacts-list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contacts-mail {
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    transition: color var(--transition-duration) var(--timing-function);
+
+}
+.contacts-mail-icon {
+    fill: var(--fill-icon);
+    width: 12px;
+    height: 16px;
+    margin-right: 10px;
+    transition: fill var(--transition-duration) var(--timing-function)
+}
+
+
+/*Ховер и фокус емейла и телефона с иконками*/
+
+.contacts-mail:hover .contacts-mail-icon,
+.contacts-mail:focus .contacts-mail-icon,
+.contacts-mail:hover,
+.contacts-mail:focus {
+
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+
+
+
+
+
+

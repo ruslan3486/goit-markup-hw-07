@@ -1,0 +1,59 @@
+.sections-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container-client {
+
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.new-icon {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.new-icon-link:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+.new-icon-link-list {
+    width: 44px;
+    height: 49px;
+
+
+}
+
+
+.new-icon-client {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--fill-icon);
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--fill-icon);
+    border-radius: 4px;
+    transition: border var(--transition-duration) var(--timing-function),
+        fill var(--transition-duration) var(--timing-function);
+
+}
+
+/*Ховер и фокус для иконок в секции "Постоянные клиенты"*/
+.new-icon-client:hover,
+.new-icon-client:focus {
+    border: 1px solid #2196F3;
+    fill: var(--accent-color);
+}
