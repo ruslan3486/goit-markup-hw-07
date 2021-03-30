@@ -92,13 +92,15 @@
     color: var(--primaru-text-color);
     transition: color var(--transition-duration) var(--timing-function);
 
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+
 }
 
 
-.navigation-link:hover,
-.navigation-link:focus {
-    color: var(--accent-color);
-}
 
 .tel-link:not(:last-child) {
     margin-right: 50px;
@@ -126,6 +128,15 @@
     color: var(--title-text-color);
     transition: color var(--transition-duration) var(--timing-function);
 
+    &:hover .contacts-mail-icon,
+    &:focus .contacts-mail-icon,
+    &:hover,
+    &:focus {
+
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
+
 }
 .contacts-mail-icon {
     fill: var(--fill-icon);
@@ -138,14 +149,7 @@
 
 /*Ховер и фокус емейла и телефона с иконками*/
 
-.contacts-mail:hover .contacts-mail-icon,
-.contacts-mail:focus .contacts-mail-icon,
-.contacts-mail:hover,
-.contacts-mail:focus {
 
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
 
 
 

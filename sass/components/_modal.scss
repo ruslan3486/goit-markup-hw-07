@@ -29,6 +29,12 @@
     cursor: pointer;
     transition: color var(--transition-duration) var(--timing-function);
 
+    &:hover,
+    &:focus {
+        border-color: rgba(0, 0, 0, 0.1);
+        color: var(--accent-color);
+    }
+
 }
 
 .modal-close {
@@ -38,11 +44,7 @@
     height: 18px;
 }
 
-.modal-close-link:hover,
-.modal-close-link:focus {
-    border-color: rgba(0, 0, 0, 0.1);
-    color: var(--accent-color);
-}
+
  .is-hidden {
      opacity: 0;
      visibility: hidden;

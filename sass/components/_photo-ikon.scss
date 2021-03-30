@@ -18,18 +18,21 @@
     background-color: #ffffff;
     transition: background-color var(--transition-duration) var(--timing-function),
         fill var(--transition-duration) var(--timing-function);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+
+        }
+        &:hover,
+        &:focus {
+            fill: var(--color-text-white);
+        }
 }
 
-.photo-link-ikon:hover,
-.photo-link-ikon:focus {
-    background-color: var(--accent-color);
 
-}
 
-.photo-link-ikon:hover,
-.photo-link-ikon:focus {
-    fill: var(--color-text-white);
-}
+
 
 .photo-title-ikon {
 

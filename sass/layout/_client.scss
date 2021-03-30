@@ -49,11 +49,13 @@
     transition: border var(--transition-duration) var(--timing-function),
         fill var(--transition-duration) var(--timing-function);
 
+        /*Ховер и фокус для иконок в секции "Постоянные клиенты"*/
+        &:hover,
+        &:focus {
+            border: 1px solid #2196F3;
+            fill: var(--accent-color);
+        }
+
+
 }
 
-/*Ховер и фокус для иконок в секции "Постоянные клиенты"*/
-.new-icon-client:hover,
-.new-icon-client:focus {
-    border: 1px solid #2196F3;
-    fill: var(--accent-color);
-}

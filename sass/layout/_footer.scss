@@ -43,6 +43,11 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--transition-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 
@@ -55,10 +60,7 @@
 }
 
 
-.contact-list-link:hover,
-.contact-list-link:focus {
-    color: var(--accent-color);
-}
+
 
 
 
@@ -107,27 +109,31 @@
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     transition: background-color var(--transition-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
 }
 
-/*Ховер и фокус для иконок в подвале страницы*/
 
-.about-icon-footer:hover,
-.about-icon-footer:focus {
-    background-color: var(--accent-color);
-}
 
-.about-icon-footer:hover .about-icon-footer:focus,
-.about-icon-link:hover,
-.about-icon-link:focus {
 
-    fill: var(--color-text-white);
-}
+
 
 .about-icon-link {
     fill: var(--color-text-white);
     width: 20px;
     height: 20px;
     transition: fill var(--transition-duration) var(--timing-function);
+
+    .about-icon-footer:hover .about-icon-footer:focus,
+    &:hover,
+    &:focus {
+
+        fill: var(--color-text-white);
+    }
 }
 
 .form-link {

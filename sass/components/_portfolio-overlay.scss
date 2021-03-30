@@ -24,12 +24,14 @@
     letter-spacing: 0.03em;
     transform: translateY(100%);
     transition: transform var(--transition-duration) var(--timing-function);
+
+    .link-imeges-item-wrapper:hover &,
+    .link-imeges-item-wrapper:focus & {
+        transform: translateY(0%);
+
+
+    }
+
 }
 
 
-.link-imeges-item-wrapper:hover .overlay,
-.link-imeges-item-wrapper:focus .overlay {
-    transform: translateY(0%);
-
-
-}

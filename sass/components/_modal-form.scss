@@ -39,6 +39,11 @@
     border-radius: 4px;
     padding-left: 42px;
     transition: border-color var(--transition-duration) var(--timing-function);
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
 }
 
 .icon-model-form {
@@ -51,16 +56,16 @@
     width: 18px;
     height: 18px;
     transition: fill var(--transition-duration) var(--timing-function);
+
+
+    .modal-form-input:focus+& {
+        fill: var(--accent-color);
+    }
 }
 
-.modal-form-input:focus {
-    outline: none;
-    border-color: var(--accent-color);
-}
 
-.modal-form-input:focus+.icon-model-form {
-    fill: var(--accent-color);
-}
+
+
 
 .modal-form-icon-wrapper {
     display: block;
@@ -83,17 +88,20 @@
     resize: none;
     transition: border-color var(--transition-duration) var(--timing-function);
 
-}
-
-.modal-form-message::placeholder {
+&::placeholder {
     color: rgba(117, 117, 117, 0.5);
 
 }
-
-.modal-form-message:focus {
+&:focus {
     outline: none;
     border-color: var(--accent-color);
 }
+
+}
+
+
+
+
 
 .modal-form-chek-desc {
     margin-bottom: 30px;
@@ -105,6 +113,30 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+
+    &::before {
+        margin-right: 7px;
+        content: "";
+        display: block;
+        width: 16px;
+        height: 15px;
+        border: 1px solid var(--primaru-text-color);
+        cursor: pointer;
+
+        .modal-form-term:checked+& {
+            background-color: var(--accent-color);
+            background-image: url(../images/Vector.svg);
+            background-repeat: no-repeat;
+            border-radius: 2px;
+            border-color: var(--accent-color);
+            background-position: center;
+        }
+
+        .modal-form-term:focus+& {
+            box-shadow: 0 0 0 2px #2196F3;
+        }
+
+    }
 }
 
 .modal-form-chek-link {
@@ -116,31 +148,12 @@
 
 
 
-.modal-form-chek-desc::before {
-    margin-right: 7px;
-    content: "";
-    display: block;
-    width: 16px;
-    height: 15px;
-    border: 1px solid var(--primaru-text-color);
-    cursor: pointer;
 
 
-}
-
-.modal-form-term:checked+.modal-form-chek-desc::before {
-    background-color: var(--accent-color);
-    background-image: url(../images/Vector.svg);
-    background-repeat: no-repeat;
-    border-radius: 2px;
-    border-color: var(--accent-color);
-    background-position: center;
-}
 
 
-.modal-form-term:focus+.modal-form-chek-desc::before {
-    box-shadow: 0 0 0 2px #2196F3;
-}
+
+
 
 .modal-form-btn {
 
