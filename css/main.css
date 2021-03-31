@@ -61,6 +61,15 @@ img {
   padding-right: 15px;
 }
 
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -76,15 +85,6 @@ img {
 .header {
   margin: 0 auto;
   border: 1px solid #ececec;
-}
-
-.header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .navigation {
@@ -170,8 +170,7 @@ img {
   transition: color var(--transition-duration) var(--timing-function);
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation-link:hover, .navigation-link:focus {
   color: var(--accent-color);
 }
 
@@ -209,6 +208,12 @@ img {
   transition: color var(--transition-duration) var(--timing-function);
 }
 
+.contacts-mail:hover .contacts-mail-icon,
+.contacts-mail:focus .contacts-mail-icon, .contacts-mail:hover, .contacts-mail:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .contacts-mail-icon {
   fill: var(--fill-icon);
   width: 12px;
@@ -219,14 +224,6 @@ img {
 }
 
 /*Ховер и фокус емейла и телефона с иконками*/
-.contacts-mail:hover .contacts-mail-icon,
-.contacts-mail:focus .contacts-mail-icon,
-.contacts-mail:hover,
-.contacts-mail:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
 .effective {
   max-width: 1600px;
   margin: 0 auto;
@@ -510,11 +507,10 @@ img {
   border-radius: 4px;
   -webkit-transition: border var(--transition-duration) var(--timing-function), fill var(--transition-duration) var(--timing-function);
   transition: border var(--transition-duration) var(--timing-function), fill var(--transition-duration) var(--timing-function);
+  /*Ховер и фокус для иконок в секции "Постоянные клиенты"*/
 }
 
-/*Ховер и фокус для иконок в секции "Постоянные клиенты"*/
-.new-icon-client:hover,
-.new-icon-client:focus {
+.new-icon-client:hover, .new-icon-client:focus {
   border: 1px solid #2196F3;
   fill: var(--accent-color);
 }
@@ -564,17 +560,16 @@ img {
   transition: color var(--transition-duration) var(--timing-function);
 }
 
+.contact-list-link:hover, .contact-list-link:focus {
+  color: var(--accent-color);
+}
+
 .contact-list-address {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-}
-
-.contact-list-link:hover,
-.contact-list-link:focus {
-  color: var(--accent-color);
 }
 
 /* Иконки в подвале */
@@ -637,16 +632,8 @@ img {
   transition: background-color var(--transition-duration) var(--timing-function);
 }
 
-/*Ховер и фокус для иконок в подвале страницы*/
-.about-icon-footer:hover,
-.about-icon-footer:focus {
+.about-icon-footer:hover, .about-icon-footer:focus {
   background-color: var(--accent-color);
-}
-
-.about-icon-footer:hover .about-icon-footer:focus,
-.about-icon-link:hover,
-.about-icon-link:focus {
-  fill: var(--color-text-white);
 }
 
 .about-icon-link {
@@ -655,6 +642,10 @@ img {
   height: 20px;
   -webkit-transition: fill var(--transition-duration) var(--timing-function);
   transition: fill var(--transition-duration) var(--timing-function);
+}
+
+.about-icon-link .about-icon-footer:hover .about-icon-footer:focus, .about-icon-link:hover, .about-icon-link:focus {
+  fill: var(--color-text-white);
 }
 
 .form-link {
@@ -748,13 +739,11 @@ img {
   transition: background-color var(--transition-duration) var(--timing-function), fill var(--transition-duration) var(--timing-function);
 }
 
-.photo-link-ikon:hover,
-.photo-link-ikon:focus {
+.photo-link-ikon:hover, .photo-link-ikon:focus {
   background-color: var(--accent-color);
 }
 
-.photo-link-ikon:hover,
-.photo-link-ikon:focus {
+.photo-link-ikon:hover, .photo-link-ikon:focus {
   fill: var(--color-text-white);
 }
 
@@ -810,16 +799,15 @@ img {
   transition: color var(--transition-duration) var(--timing-function);
 }
 
+.modal-close-link:hover, .modal-close-link:focus {
+  border-color: rgba(0, 0, 0, 0.1);
+  color: var(--accent-color);
+}
+
 .modal-close {
   fill: currentColor;
   width: 18px;
   height: 18px;
-}
-
-.modal-close-link:hover,
-.modal-close-link:focus {
-  border-color: rgba(0, 0, 0, 0.1);
-  color: var(--accent-color);
 }
 
 .is-hidden {
@@ -866,6 +854,11 @@ img {
   transition: border-color var(--transition-duration) var(--timing-function);
 }
 
+.modal-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
 .icon-model-form {
   fill: var(--primaru-text-color);
   display: block;
@@ -878,11 +871,6 @@ img {
   height: 18px;
   -webkit-transition: fill var(--transition-duration) var(--timing-function);
   transition: fill var(--transition-duration) var(--timing-function);
-}
-
-.modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
 }
 
 .modal-form-input:focus + .icon-model-form {
@@ -947,10 +935,6 @@ img {
   color: var(--title-text-color);
 }
 
-.modal-form-chek-link {
-  color: var(--accent-color);
-}
-
 .modal-form-chek-desc::before {
   margin-right: 7px;
   content: "";
@@ -973,6 +957,10 @@ img {
 .modal-form-term:focus + .modal-form-chek-desc::before {
   -webkit-box-shadow: 0 0 0 2px #2196F3;
           box-shadow: 0 0 0 2px #2196F3;
+}
+
+.modal-form-chek-link {
+  color: var(--accent-color);
 }
 
 .modal-form-btn {

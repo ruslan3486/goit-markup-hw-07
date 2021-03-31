@@ -61,6 +61,15 @@ img {
   padding-right: 15px;
 }
 
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -76,15 +85,6 @@ img {
 .header {
   margin: 0 auto;
   border: 1px solid #ececec;
-}
-
-.header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .navigation {
@@ -170,8 +170,7 @@ img {
   transition: color var(--transition-duration) var(--timing-function);
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation-link:hover, .navigation-link:focus {
   color: var(--accent-color);
 }
 
@@ -209,6 +208,12 @@ img {
   transition: color var(--transition-duration) var(--timing-function);
 }
 
+.contacts-mail:hover .contacts-mail-icon,
+.contacts-mail:focus .contacts-mail-icon, .contacts-mail:hover, .contacts-mail:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .contacts-mail-icon {
   fill: var(--fill-icon);
   width: 12px;
@@ -219,14 +224,6 @@ img {
 }
 
 /*Ховер и фокус емейла и телефона с иконками*/
-.contacts-mail:hover .contacts-mail-icon,
-.contacts-mail:focus .contacts-mail-icon,
-.contacts-mail:hover,
-.contacts-mail:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
 .list-btn {
   margin-bottom: 50px;
   display: -webkit-box;
@@ -264,11 +261,10 @@ img {
   transition: background-color var(--transition-duration) var(--timing-function), color var(--transition-duration) var(--timing-function), -webkit-box-shadow var(--transition-duration) var(--timing-function);
   transition: background-color var(--transition-duration) var(--timing-function), color var(--transition-duration) var(--timing-function), box-shadow var(--transition-duration) var(--timing-function);
   transition: background-color var(--transition-duration) var(--timing-function), color var(--transition-duration) var(--timing-function), box-shadow var(--transition-duration) var(--timing-function), -webkit-box-shadow var(--transition-duration) var(--timing-function);
+  /*Кнопка подсвечивания портфолио*/
 }
 
-/*Кнопка подсвечивания портфолио*/
-.list-primary:hover,
-.list-primary:focus {
+.list-primary:hover, .list-primary:focus {
   background-color: var(--accent-color);
   color: var(--color-text-white);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -330,8 +326,7 @@ img {
   transition: box-shadow var(--transition-duration) var(--timing-function), -webkit-box-shadow var(--transition-duration) var(--timing-function);
 }
 
-.list-imeges-item:hover,
-.list-imeges-item:focus {
+.list-imeges-item:hover, .list-imeges-item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -396,8 +391,7 @@ img {
   transition: box-shadow var(--transition-duration) var(--timing-function), -webkit-box-shadow var(--transition-duration) var(--timing-function);
 }
 
-.list-imeges-item:hover,
-.list-imeges-item:focus {
+.list-imeges-item:hover, .list-imeges-item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -486,17 +480,16 @@ img {
   transition: color var(--transition-duration) var(--timing-function);
 }
 
+.contact-list-link:hover, .contact-list-link:focus {
+  color: var(--accent-color);
+}
+
 .contact-list-address {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-}
-
-.contact-list-link:hover,
-.contact-list-link:focus {
-  color: var(--accent-color);
 }
 
 /* Иконки в подвале */
@@ -559,16 +552,8 @@ img {
   transition: background-color var(--transition-duration) var(--timing-function);
 }
 
-/*Ховер и фокус для иконок в подвале страницы*/
-.about-icon-footer:hover,
-.about-icon-footer:focus {
+.about-icon-footer:hover, .about-icon-footer:focus {
   background-color: var(--accent-color);
-}
-
-.about-icon-footer:hover .about-icon-footer:focus,
-.about-icon-link:hover,
-.about-icon-link:focus {
-  fill: var(--color-text-white);
 }
 
 .about-icon-link {
@@ -577,6 +562,10 @@ img {
   height: 20px;
   -webkit-transition: fill var(--transition-duration) var(--timing-function);
   transition: fill var(--transition-duration) var(--timing-function);
+}
+
+.about-icon-link .about-icon-footer:hover .about-icon-footer:focus, .about-icon-link:hover, .about-icon-link:focus {
+  fill: var(--color-text-white);
 }
 
 .form-link {

@@ -6,11 +6,6 @@
     
 
 
-.header .container {
-    display: flex;
-    align-items: center;
-
-}
 
 .navigation {
     display: flex;
@@ -46,42 +41,45 @@
 }
 
 
+.navigation-item{
 
-.navigation-item:not(:last-child) {
+&:not(:last-child) {
     margin-right: 50px;
 
+}
 }
 
 
 
+
 /*Подсвечивание страницы*/
-.navigation-list .navigation-link.navigation-link-nav {
+.navigation-link-nav {
     color: var(--accent-color);
 }
 
 .navigation-link-nav {
     position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--accent-color);
+        border-radius: 2px;
+    }
 }
+
+
+
+
+
 
 .navigation-link {
     position: relative;
-}
-
-.navigation-link-nav::after {
-    content: '';
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: var(--accent-color);
-    border-radius: 2px;
-}
-
-
-.navigation-link {
-
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -101,10 +99,13 @@
 }
 
 
+.tel-link{
 
-.tel-link:not(:last-child) {
-    margin-right: 50px;
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
 }
+
 .contacts-list {
     margin-left: auto;
     display: flex;

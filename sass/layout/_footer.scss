@@ -23,12 +23,14 @@
 
 }
 
-.contact-list-item:not(:last-child) {
-    margin-bottom: 9px;
-}
+
 
 .contact-list-item {
     display: block;
+
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
 }
 
 .link-name {
@@ -95,10 +97,12 @@
     align-items: center;
     justify-content: center;
 }
-
-.list-icon-item:not(:last-child) {
+.list-icon-item{
+&:not(:last-child) {
     margin-right: 10px;
 }
+}
+
 
 .about-icon-footer {
     display: flex;

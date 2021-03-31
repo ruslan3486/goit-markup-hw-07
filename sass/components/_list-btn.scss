@@ -4,11 +4,16 @@
     justify-content: center;
 }
 
+.list-btn-item{
 
-.list-btn-item:not(:last-child) {
+    &:not(:last-child) {
 
-    margin-right: 8px;
+        margin-right: 8px;
+    }
+
 }
+
+
 .button {
     background: #F5F4FA;
     font-family: var(--main-font);
