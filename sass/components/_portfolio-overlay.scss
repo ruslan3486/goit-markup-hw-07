@@ -1,11 +1,11 @@
-.list-imeges-item-wrapper {
+.portfolio__wrapper {
 
     position: relative;
     overflow: hidden;
 
 }
 
-.overlay {
+.portfolio__overlay {
 
     position: absolute;
     top: 0;
@@ -25,8 +25,8 @@
     transform: translateY(100%);
     transition: transform var(--transition-duration) var(--timing-function);
 
-    .link-imeges-item-wrapper:hover &,
-    .link-imeges-item-wrapper:focus & {
+    .portfolio__link:hover &,
+    .portfolio__link:focus & {
         transform: translateY(0%);
 
 

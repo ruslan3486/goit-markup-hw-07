@@ -1,4 +1,4 @@
-.contacts-name {
+.footer {
 
     max-width: 1600px;
     margin: 0 auto;
@@ -7,25 +7,25 @@
     background: var(--color-efective);
 }
 
-
-.web-logo {
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--color-text-white);
+.footer__container {
+    display: flex;
+    align-items: baseline;
 }
 
-.web-logo-footer {
+.logo_theme_dark{
     display: inline-block;
     margin-bottom: 30px;
-
+    color: var(--color-text-white);
+ 
+ 
 }
 
 
 
-.contact-list-item {
+
+
+
+.footer__item {
     display: block;
 
     &:not(:last-child) {
@@ -33,12 +33,11 @@
     }
 }
 
-.link-name {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-}
 
-.contact-list-link {
+
+.footer__link-info {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -53,7 +52,7 @@
 }
 
 
-.contact-list-address {
+.footer__adress-map {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -67,19 +66,14 @@
 
 
 /* Иконки в подвале */
-.container-footer {
-    display: flex;
-    align-items: baseline;
 
 
-}
-
-.container-widht {
+.footer__social {
     display: block;
     margin-left: 70px;
 }
 
-.about-title-icon {
+.footer__social-title {
     display: block;
     margin-bottom: 20px;
 
@@ -92,19 +86,19 @@
     color: #FFFFFF;
 }
 
-.about-icon {
+.footer__social-list {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.list-icon-item{
+.footer__social-item {
 &:not(:last-child) {
     margin-right: 10px;
 }
 }
 
 
-.about-icon-footer {
+.footer__social-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,13 +120,13 @@
 
 
 
-.about-icon-link {
+.footer__social-icon {
     fill: var(--color-text-white);
     width: 20px;
     height: 20px;
     transition: fill var(--transition-duration) var(--timing-function);
 
-    .about-icon-footer:hover .about-icon-footer:focus,
+    .footer__social-link:hover .footer__social-linkr:focus,
     &:hover,
     &:focus {
 
@@ -140,7 +134,7 @@
     }
 }
 
-.form-link {
+.subscription__text {
     margin-bottom: 20px;
     font-style: normal;
     font-weight: 700;
@@ -152,7 +146,7 @@
     color: var(--color-text-white);
 }
 
-.subscribing-form {
+.subscription__button {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -169,7 +163,7 @@
     background: var(--accent-color);
 }
 
-.form-link-container {
+.subscription {
     margin-left: auto;
     display: flex;
     flex-direction: column;
@@ -178,7 +172,7 @@
 
 
 
-.input-form-mail {
+.subscription__email {
     padding-left: 16px;
     color: var(--color-text-white);
     width: 358px;
@@ -189,7 +183,7 @@
 }
 
 
-.form-mail-imege {
+.subscription-icon {
     margin-left: 10px;
     width: 24px;
     height: 24px;

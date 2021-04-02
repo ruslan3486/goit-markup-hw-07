@@ -1,10 +1,10 @@
-.list-btn {
+.filter {
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
 
-.list-btn-item{
+.filter__item {
 
     &:not(:last-child) {
 
@@ -14,19 +14,13 @@
 }
 
 
-.button {
-    background: #F5F4FA;
-    font-family: var(--main-font);
-    color: var(--primaru-text-color);
-
-}
 
 
 
-.list-primary {
+.filter__button {
     border: 1px solid transparent;
     padding: 6px 22px;
-    font-family: inherit;
+    font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -35,7 +29,7 @@
     border-radius: 4px;
     background: #F5F4FA;
     border-radius: 4px;
-
+    color: var(--primaru-text-color);
     border: 1px solid #F5F4FA;
     transition: background-color var(--transition-duration) var(--timing-function),
         color var(--transition-duration) var(--timing-function),

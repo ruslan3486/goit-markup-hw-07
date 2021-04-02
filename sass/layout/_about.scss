@@ -1,15 +1,15 @@
-.about {
+.about-programs {
     padding-top: 47px;
     padding-bottom: 94px;
 }
-.about-list {
+.about-programs__list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
 
 }
-.about-title {
+.about-programs__title {
 
     margin-bottom: 50px;
     font-weight: 700;
@@ -20,11 +20,11 @@
     color: var(--primaru-text-color);
 }
 
-.about-list-img {
+.about-programs__img {
     position: relative;
 }
 
-.about-title-application {
+.about-programs__application {
     width: 100%;
     height: 70px;
     padding-top: 27px;
@@ -45,7 +45,7 @@
     color: #FFFFFF;
 }
 
-.about-list-item {
+.about-programs__item {
     position: relative;
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;

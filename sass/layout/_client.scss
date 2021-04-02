@@ -1,9 +1,9 @@
-.sections-client {
+.client {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.container-client {
+.client__title {
 
     margin-bottom: 50px;
     font-style: normal;
@@ -14,14 +14,14 @@
     letter-spacing: 0.03em;
 }
 
-.new-icon {
+.client__list {
 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
 }
-.new-icon-link{
+.client__item {
 
     &:not(:last-child) {
         margin-right: 30px;
@@ -32,7 +32,7 @@
 
 
 
-.new-icon-link-list {
+.client__logo {
     width: 44px;
     height: 49px;
 
@@ -40,7 +40,7 @@
 }
 
 
-.new-icon-client {
+.client__link {
 
     display: flex;
     align-items: center;
