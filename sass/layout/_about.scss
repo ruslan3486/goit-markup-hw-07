@@ -12,9 +12,8 @@
 .about-programs__title {
 
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    @include font(700, 36px, 1.17);
+    
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primaru-text-color);
@@ -35,9 +34,8 @@
 
     text-align: center;
     font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+    @include font(700, 14px, 1.14);
+   
     background: rgba(47, 48, 58, 0.8);
     letter-spacing: 0.03em;
     text-transform: uppercase;

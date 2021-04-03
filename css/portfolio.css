@@ -54,6 +54,16 @@ img {
   font-style: normal;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url("./font/roboto-v20-latin-regular.ttf");
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway-v19-latin-regular.ttf");
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -300,9 +310,9 @@ img {
 
 .portfolio__title {
   margin-bottom: 4px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--primaru-text-color);
@@ -365,9 +375,9 @@ img {
 
 .portfolio__title {
   margin-bottom: 4px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--primaru-text-color);
@@ -413,8 +423,7 @@ img {
   background: rgba(33, 150, 243, 0.9);
   color: #FFFFFF;
   padding: 63px 24px;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -482,7 +491,7 @@ img {
 .footer__adress-map {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
@@ -496,7 +505,7 @@ img {
 .footer__social-title {
   display: block;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -556,7 +565,6 @@ img {
 
 .subscription__text {
   margin-bottom: 20px;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -566,7 +574,6 @@ img {
 }
 
 .subscription__button {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;

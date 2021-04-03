@@ -14,11 +14,8 @@
     background: rgba(33, 150, 243, 0.9);
     color: #FFFFFF;
     padding: 63px 24px;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.55;
+    @include font(400, 18px, 1.55);
+    
 
 
     letter-spacing: 0.03em;

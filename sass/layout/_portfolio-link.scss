@@ -27,18 +27,15 @@
 
 
 
-
-     font-weight: bold;
-     font-size: 18px;
-     line-height: 36px;
+     @include font(700, 18px, 2);
+     
      /* identical to box height, or 200% */
      letter-spacing: 0.06em;
      color: var(--primaru-text-color);
  }
   .portfolio__rubric {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.87;
+      @include font(400, 16px, 1.87);
+      
       letter-spacing: 0.03em;
       color: var(--title-text-color)
   }

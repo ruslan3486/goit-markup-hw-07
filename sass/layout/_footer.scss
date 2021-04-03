@@ -38,9 +38,8 @@
 .footer__link-info {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+  @include font(400, 14px, 1.7);
+    
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--transition-duration) var(--timing-function);
@@ -53,9 +52,8 @@
 
 
 .footer__adress-map {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    @include font(400, 14px, 1.7);
+    
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
@@ -76,10 +74,8 @@
 .footer__social-title {
     display: block;
     margin-bottom: 20px;
-
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14); 
+   
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -136,10 +132,9 @@
 
 .subscription__text {
     margin-bottom: 20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14);
+    
+   
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -147,10 +142,9 @@
 }
 
 .subscription__button {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+   
+    @include font(700, 16px, 1.88);
+   
     display: inline-flex;
     align-items: center;
     text-align: center;

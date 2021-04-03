@@ -13,9 +13,8 @@
 }
 .logo {
     font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font(700, 26px, 1.19);
+    
     letter-spacing: 0.03em;
     
     
@@ -33,9 +32,8 @@
 }
 .logo__color {
     font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font(700, 26px, 1.19);
+    
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }
