@@ -228,16 +228,9 @@ img {
 
 .contact__icon {
   fill: var(--fill-icon);
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   -webkit-transition: fill var(--transition-duration) var(--timing-function);
   transition: fill var(--transition-duration) var(--timing-function);
-}
-
-.contact__link > .contact__icon_tel {
-  width: 10px;
-  height: 16px;
 }
 
 /*Ховер и фокус емейла и телефона с иконками*/
