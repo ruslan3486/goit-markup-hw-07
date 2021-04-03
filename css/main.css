@@ -1,4 +1,16 @@
 @charset "UTF-8";
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -78,18 +90,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
 }
 
 .header {
@@ -228,11 +228,16 @@ img {
 
 .contact__icon {
   fill: var(--fill-icon);
-  width: 12px;
-  height: 16px;
+  width: 16px;
+  height: 12px;
   margin-right: 10px;
   -webkit-transition: fill var(--transition-duration) var(--timing-function);
   transition: fill var(--transition-duration) var(--timing-function);
+}
+
+.contact__link > .contact__icon_tel {
+  width: 10px;
+  height: 16px;
 }
 
 /*Ховер и фокус емейла и телефона с иконками*/
@@ -528,7 +533,6 @@ img {
 }
 
 .footer {
-  max-width: 1600px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;

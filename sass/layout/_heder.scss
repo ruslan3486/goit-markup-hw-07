@@ -148,10 +148,15 @@
 }
 .contact__icon {
     fill: var(--fill-icon);
-    width: 12px;
-    height: 16px;
+    width: 16px;
+    height: 12px;
     margin-right: 10px;
     transition: fill var(--transition-duration) var(--timing-function)
+}
+
+.contact__link>.contact__icon_tel{
+    width: 10px;
+    height: 16px;
 }
 
 
